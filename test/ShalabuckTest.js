@@ -1,14 +1,3 @@
-// 1 - It should pass a canary test
-
-// 2 - It should allow a token to be minted
-
-// 3 - A minted token should be associated with the contract owner
-
-// 4 - The owner of the contract should be able to send a token to a user
-
-// 5 - A user should be able to send a token to a different token
-
-
 const Shalabuck = artifacts.require('./Shalabuck.sol');
 const _ = '        ';
 
@@ -39,6 +28,7 @@ contract('Shalabuck', async function (accounts) {
   });
 
   describe('Shalabuck.sol', function () {
+    // 1 - It should pass a canary test
     it('Should always pass this canary test', async () => {
       assert(true === true, 'this is true');
     });
@@ -47,5 +37,24 @@ contract('Shalabuck', async function (accounts) {
       let instance = await Shalabuck.deployed();
       // TODO: Write the code here to call a contract function
     });
+
+    it("Should allow a token to be minted by the contract owner", async () => {
+
+    })
+
+    it("Should see minted tokens be associated with contract owner", async () => {
+
+    })
+
+    it("Should allow the contract owner to send a token to a user", async () => {
+
+    })
+
+    it("Should allow a user to send a token to another user", async () => {
+
+    })
+
+
+
  });
 });
